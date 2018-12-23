@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>TestGen 2016</title>
+      <link rel="stylesheet" href="css/style.default.css" type="text/css" />
+      <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+      <script type="text/javascript" src="js/jquery.cookie.js"></script>
+      <script type="text/javascript" src="js/modernizr.min.js"></script>
+      <script type="text/javascript" src="js/jquery.smartWizard.min.js"></script>
+      <script type="text/javascript" src="js/custom.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function(){
+             
+             // Smart Wizard 	
+             jQuery('#wizard').smartWizard({onFinish: onFinishCallback});
+             jQuery('#wizard2').smartWizard({onFinish: onFinishCallback});
+             jQuery('#wizard3').smartWizard({onFinish: onFinishCallback});
+         		
+             function onFinishCallback(){
+                 alert('Finish Clicked');
+             } 
+         			
+             jQuery('select, input:checkbox').uniform();
+             
+         });
+      </script>
+   </head>
+   <body>
+      <div class="mainwrapper">
+         <div class="header">
+            <div class="logo">
+               <a href="dashboard.html"><img src="images/logo.png" alt="" /></a>
+            </div>
+            <div class="headerinner">
+<ul class="headmenu">
+                  
+                  
+                  
+                  <li class="right">
+                     <div class="userloggedinfo">
+                        <img src="images/photos/thumb1.png" alt="">
+                        <div class="userinfo">
+                           <h5>James Burns<small>-- jamesburns@testgen.com</small></h5>
+                           <ul>
+                              <li><a href="editprofile.html">Edit Profile</a></li>
+                              
+                              <li><a href="index.html">Sign Out</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  
+                   </li></ul>               <!--headmenu-->
+            </div>
+         </div>
+         <div class="leftpanel">
+<div class="leftmenu">
+               <ul class="nav nav-tabs nav-stacked">
+                  <li class="nav-header">Navigation</li>
+                  <li class="active"><a href="dashboard.html"><span class="iconfa-laptop"></span> Dashboard</a></li>
+                  <li><a href="favorites.html"><span class="iconfa-heart"></span>Favorites</a></li>
+                  
+                  
+                  
+                  
+                  <li><a href="notifications.html"><span class="iconfa-bell"></span>Notification</a></li>
+                  <li><a href="analyzer.html"><span class="iconfa-signal"></span>Analyzer</a></li>
+                  <li><a href="leaderboard.html"><span class="iconfa-trophy"></span>Leaderboard</a></li>
+                  
+                  
+                  
+               </ul>
+            </div>
+            <!--leftmenu-->
+         </div>
+         <!-- leftpanel -->
+         <div class="rightpanel">
+            <ul class="breadcrumbs">
+               <li><a href="dashboard.html"><i class="iconfa-home"></i></a> <span class="separator"></span></li>
+               <li><a href="dashboard.html">Dashboard</a> <span class="separator"></span></li>
+               <li>Read Notes</li>
+               <li class="right">
+                  <a href="" data-toggle="dropdown" class="dropdown-toggle"><i class="icon-tint"></i> Color Skins</a>
+                  <ul class="dropdown-menu pull-right skin-color">
+                     <li><a href="default">Default</a></li>
+                     <li><a href="navyblue">Navy Blue</a></li>
+                     <li><a href="palegreen">Pale Green</a></li>
+                     <li><a href="red">Red</a></li>
+                     <li><a href="green">Green</a></li>
+                     <li><a href="brown">Brown</a></li>
+                  </ul>
+               </li>
+            </ul>
+            <div class="pageheader">
+               <form action="results.html" method="post" class="searchbar">
+                  <input type="text" name="keyword" placeholder="To search type and hit enter..." />
+               </form>
+               <div class="pageicon"><span class="iconfa-pencil"></span></div>
+               <div class="pagetitle">
+                  <h5><br></h5>
+                  <h1>Read Notes</h1>
+               </div>
+            </div>
+            <!--pageheader-->
+            <div class="maincontent">
+               <div class="maincontentinner">
+                  <!-- START OF DEFAULT WIZARD -->
+                  
+                  <form class="stdform" method="post" action="wizards.html">
+                     <div id="wizard" class="wizard">
+                        <br />
+                        <ul class="hormenu">
+                           <li>
+                              <a href="#wiz1step1">
+                              <span class="h2">Section 0</span>
+                              <span class="label">Basic Information</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#wiz1step2">
+                              <span class="h2">Section 1</span>
+                              <span class="label">Subtopic 1</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#wiz1step3">
+                              <span class="h2">Section 2</span>
+                              <span class="label">Subtopic 2</span>
+                              </a>
+                           </li>
+                        </ul>
+                        <div id="wiz1step1">
+                           <h4 class="widgettitle">Basic Intel</h4>
+                           <div class="par terms" style="padding: 0 20px;">
+                              <p> <b>Subject Name:</b> C++ Programming</p>
+                              <p> <strong>Notes Header:</strong> C++ Polymorphism</p>
+                              <p> <strong>Time:</strong> 20 minutes</p>
+                              <p> <strong>Difficulty:</strong> Intermediate</p>
+                                                            
+                           </div>
+                        </div>
+                        <!--#wiz1step1-->
+                        <div id="wiz1step2">
+                           <h4 class="widgettitle">Subtopic 1</h4>
+                           <div class="par terms" style="padding: 0 20px;">
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                              <br>
+                              
+                           </div>
+                        </div>
+                        <!--#wiz1step2-->
+                        <div id="wiz1step3">
+                           <h4 class="widgettitle">Subtopic 2</h4>
+                           <div class="par terms" style="padding: 0 20px;">
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                              <br>
+                              
+                           </div>
+                        </div>
+                        <!--#wiz1step3-->
+                     </div>
+                     <!--#wizard-->
+                  </form>
+                  <!-- END OF DEFAULT WIZARD -->
+                  <div class="clearfix"></div>
+                  <br /><br />
+                  
+                  </form>
+                  <!-- END OF TABBED WIZARD -->
+                  <div class="footer">
+                     <div class="footer-left">
+                        <span>2016. TestGen. All Rights Reserved.</span>
+                     </div>
+                      
+                  </div>
+                  <!--footer-->
+               </div>
+               <!--maincontentinner-->
+            </div>
+            <!--maincontent-->
+        </div>
+         <!--rightpanel-->
+      </div>
+      <!--mainwrapper-->
+   </body>
+</html>

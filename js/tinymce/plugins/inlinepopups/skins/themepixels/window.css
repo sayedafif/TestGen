@@ -1,0 +1,91 @@
+/* testgen */
+
+/* Reset */
+.testgen, .testgen div, .testgen span, .testgen a {vertical-align:baseline; text-align:left; position:absolute; border:0; padding:0; margin:0; background:transparent; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size:11px; color:#000; text-decoration:none; font-weight:normal; width:auto; height:auto; overflow:hidden; display:block}
+
+/* General */
+.testgen {position:absolute; direction:ltr; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; box-shadow: 1px 1px 10px rgba(0,0,0,0.2); -webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.2); box-shadow: 1px 1px 10px rgba(0,0,0,0.2); }
+.testgen .mceWrapper {position:static}
+.mceEventBlocker {position:fixed; left:0; top:0; background:url(img/horizontal.gif) no-repeat 0 -75px; width:100%; height:100%}
+.testgen .mcePlaceHolder {border:1px solid #000; background:#888; top:0; left:0; opacity:0.5; -ms-filter:'alpha(opacity=50)'; filter:alpha(opacity=50)}
+.testgen_modalBlocker {position:fixed; left:0; top:0; width:100%; height:100%; background:#FFF; opacity:0.6; -ms-filter:'alpha(opacity=60)'; filter:alpha(opacity=60); display:none}
+
+/* Top */
+.testgen .mceTop, .testgen .mceTop div {top:0; width:100%; height:30px}
+.testgen .mceTop .mceLeft {width:6px; background:url(img/corners.gif)}
+.testgen .mceTop .mceCenter {right:6px; width:100%; height:23px; background:url(img/horizontal.gif) 12px 0; clip:rect(auto auto auto 12px)}
+.testgen .mceTop .mceRight {right:0; width:6px; height:23px; background:url(img/corners.gif) -12px 0}
+.testgen .mceTop span {width:100%; text-align:center; vertical-align:middle; line-height:23px; font-weight:bold}
+.testgen .mceFocus .mceTop .mceLeft {background:#333}
+.testgen .mceFocus .mceTop .mceCenter {background:#333}
+.testgen .mceFocus .mceTop .mceRight {background:#333}
+.testgen .mceFocus .mceTop span {color:#FFF}
+
+/* Middle */
+.testgen .mceMiddle, .testgen .mceMiddle div {top:0}
+.testgen .mceMiddle {width:100%; height:100%; clip:rect(23px auto auto auto)}
+.testgen .mceMiddle .mceLeft {left:0; width:5px; height:100%; background:#fff; border-left: 1px solid #ccc; }
+.testgen .mceMiddle span {top:23px; left:5px; width:100%; height:100%; background:#FFF}
+.testgen .mceMiddle .mceRight {right:0; width:5px; height:100%; background:#fff; border-right: 1px solid #ccc; }
+
+/* Bottom */
+.testgen .mceBottom, .testgen .mceBottom div {height:6px}
+.testgen .mceBottom {left:0; bottom:0; width:100%; border-bottom: 1px solid #ccc;}
+.testgen .mceBottom div {top:0}
+.testgen .mceBottom .mceLeft {left:0; width:5px; background:#fff; border-left: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+.testgen .mceBottom .mceCenter {left:5px; width:100%; background:#fff; border-bottom: 1px solid #ccc;}
+.testgen .mceBottom .mceRight {right:0; width:5px; background: #fff; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; }
+.testgen .mceBottom span {display:none}
+.testgen .mceStatusbar .mceBottom, .testgen .mceStatusbar .mceBottom div {height:23px}
+.testgen .mceStatusbar .mceBottom .mceLeft {background:url(img/corners.gif) -29px 0}
+.testgen .mceStatusbar .mceBottom .mceCenter {background:url(img/horizontal.gif) 0 -52px}
+.testgen .mceStatusbar .mceBottom .mceRight {background:url(img/corners.gif) -24px 0}
+.testgen .mceStatusbar .mceBottom span {display:block; left:7px; font-family:Arial, Verdana; font-size:11px; line-height:23px}
+
+/* Actions */
+.testgen a {width:29px; height:16px; top:3px;}
+.testgen .mceClose {right:6px; background:url(img/buttons.gif) -87px 0}
+.testgen .mceMin {display:none; right:68px; background:url(img/buttons.gif) 0 0}
+.testgen .mceMed {display:none; right:37px; background:url(img/buttons.gif) -29px 0}
+.testgen .mceMax {display:none; right:37px; background:url(img/buttons.gif) -58px 0}
+.testgen .mceMove {display:none;width:100%;cursor:move;background:url(img/corners.gif) no-repeat -100px -100px}
+.testgen .mceMovable .mceMove {display:block}
+.testgen .mceFocus .mceClose {right:6px; background:url(img/buttons.gif) -87px -16px}
+.testgen .mceFocus .mceMin {right:68px; background:url(img/buttons.gif) 0 -16px}
+.testgen .mceFocus .mceMed {right:37px; background:url(img/buttons.gif) -29px -16px}
+.testgen .mceFocus .mceMax {right:37px; background:url(img/buttons.gif) -58px -16px}
+.testgen .mceFocus .mceClose:hover {right:6px; background:url(img/buttons.gif) -87px -32px}
+.testgen .mceFocus .mceClose:hover {right:6px; background:url(img/buttons.gif) -87px -32px}
+.testgen .mceFocus .mceMin:hover {right:68px; background:url(img/buttons.gif) 0 -32px}
+.testgen .mceFocus .mceMed:hover {right:37px; background:url(img/buttons.gif) -29px -32px}
+.testgen .mceFocus .mceMax:hover {right:37px; background:url(img/buttons.gif) -58px -32px}
+
+/* Resize */
+.testgen .mceResize {top:auto; left:auto; display:none; width:5px; height:5px; background:url(img/horizontal.gif) no-repeat 0 -75px}
+.testgen .mceResizable .mceResize {display:block}
+.testgen .mceResizable .mceMin, .testgen .mceMax {display:none}
+.testgen .mceMinimizable .mceMin {display:block}
+.testgen .mceMaximizable .mceMax {display:block}
+.testgen .mceMaximized .mceMed {display:block}
+.testgen .mceMaximized .mceMax {display:none}
+.testgen a.mceResizeN {top:0; left:0; width:100%; cursor:n-resize}
+.testgen a.mceResizeNW {top:0; left:0; cursor:nw-resize}
+.testgen a.mceResizeNE {top:0; right:0; cursor:ne-resize}
+.testgen a.mceResizeW {top:0; left:0; height:100%; cursor:w-resize;}
+.testgen a.mceResizeE {top:0; right:0; height:100%; cursor:e-resize}
+.testgen a.mceResizeS {bottom:0; left:0; width:100%; cursor:s-resize}
+.testgen a.mceResizeSW {bottom:0; left:0; cursor:sw-resize}
+.testgen a.mceResizeSE {bottom:0; right:0; cursor:se-resize}
+
+/* Alert/Confirm */
+.testgen .mceButton {font-weight:bold; bottom:10px; width:80px; height:30px; background:url(img/button.gif); line-height:30px; vertical-align:middle; text-align:center; outline:0}
+.testgen .mceMiddle .mceIcon {left:15px; top:35px; width:32px; height:32px}
+.testgen .mceAlert .mceMiddle span, .testgen .mceConfirm .mceMiddle span {background:transparent;left:60px; top:35px; width:320px; height:50px; overflow:auto; white-space:normal; color: #666;}
+.testgen a:hover {font-weight:bold;}
+.testgen .mceAlert .mceMiddle, .testgen .mceConfirm .mceMiddle {background:#fff}
+.testgen .mceAlert .mceOk {left:50%; top:auto; margin-left: -40px;border: 1px solid #f0882c; background: #fb9337; color: #fff;}
+.testgen .mceAlert .mceIcon {background:url(img/alert.gif)}
+.testgen .mceConfirm .mceOk {left:50%; top:auto; margin-left: -90px; border: 1px solid #f0882c; background: #fb9337; color: #fff;}
+.testgen .mceConfirm .mceCancel {left:50%; top:auto;border: 1px solid #ccc; background: #eee; color: #666;}
+.testgen .mceConfirm .mceOk, .testgen .mceConfirm .mceCancel { -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px}
+.testgen .mceConfirm .mceIcon {background:url(img/confirm.gif)}
